@@ -1,0 +1,35 @@
+﻿<Polis>
+<FastReport>
+  <Product>Осаго</Product>
+  <Version>4</Version>
+  <Form>Документ</Form>
+</FastReport>
+<DataTable>
+  <DocType>1</DocType>
+  <ContractSeries>1111</ContractSeries>
+  <ContractNumber>012345678</ContractNumber>
+  <InsurantFullName>Наименование страхователя</InsurantFullName>
+  <InsStartDate>2016-10-20T18:14:36</InsStartDate>
+  <InsEndDate>2016-10-20T18:14:36</InsEndDate>
+  <InsProgram>Наименование программы</InsProgram>
+  <InsPerson>Иванов Иван Иванович, д. р. 01.01.2001 г.</InsPerson>
+  <ServiceDesk>Служба</ServiceDesk>
+  <Doctor>Айболит</Doctor>
+  <ContactInformation>Информация</ContactInformation>
+  <ClinicList>
+    <Clinic>
+      <Name>Больница Центросоюза Российской Федерации-медицинское учреждение</Name>
+      <Address>Москва</Address>
+      <Assistance>Амбулаторно-поликлиническая помощь</Assistance>
+      <Phones>Регистратура +7495-111-11-11</Phones>
+    </Clinic>
+    <Clinic>
+      <Name>Название клиники</Name>
+      <Address>Адрес клиники</Address>
+      <Assistance>Вид помощи</Assistance>
+      <Phones>Телефон</Phones>
+    </Clinic>
+  </ClinicList>
+ </DataTable>
+</Polis>
+

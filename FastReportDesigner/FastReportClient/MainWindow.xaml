@@ -1,0 +1,30 @@
+﻿<Window x:Class="FastReportClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastReportDesigner"
+        mc:Ignorable="d"
+        Title="Редактор отчетов" Height="145" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26"></RowDefinition>
+            <RowDefinition Height="26"></RowDefinition>
+            <RowDefinition Height="26"></RowDefinition>
+            <RowDefinition Height="26"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="190"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" x:Name="lblOpration" Content="Операции:" HorizontalAlignment="Center" VerticalAlignment="Stretch" RenderTransformOrigin="0.242,0.446"/>
+        <Label Grid.Row="0" Grid.Column="1" x:Name="lblOpen" Content="Выбранный файл:" HorizontalAlignment="Center" VerticalAlignment="Stretch" RenderTransformOrigin="0.242,0.446"/>
+        <Label Grid.Row="1" Grid.Column="1" x:Name="lblTemplate" Content="" VerticalAlignment="Stretch" RenderTransformOrigin="0.465,0.52" HorizontalAlignment="Stretch"/>
+        <Button Grid.Row="1" Grid.Column="0" x:Name="btnTemplateOpen" Content="Открыть Шаблон" HorizontalAlignment="Left" VerticalAlignment="Stretch" RenderTransformOrigin="0.429,0.398"  Width="130" Click="btnTemplateOpen_Click" />
+        <Button Grid.Row="1" Grid.Column="0" x:Name="btnTemplateClear" HorizontalAlignment="Right" VerticalAlignment="Top" RenderTransformOrigin="0.429,0.398" Content="Очистить" Width="60" Click="btnTemplateClear_Click" Height="27" />
+        <Label Grid.Row="2" Grid.Column="2" x:Name="lblFile" Content="" VerticalAlignment="Stretch" RenderTransformOrigin="0.465,0.52" HorizontalAlignment="Stretch"/>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="btnFileOpen" Content="Открыть XML" HorizontalAlignment="Left" VerticalAlignment="Stretch" RenderTransformOrigin="0.429,0.398" Width="130" Click="btnFileOpen_Click" />
+        <Button Grid.Row="2" Grid.Column="0" x:Name="btnFileClear" Content="Очистить" HorizontalAlignment="Right" VerticalAlignment="Stretch" RenderTransformOrigin="0.429,0.398"  Width="60" Click="btnFileClear_Click"/>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="btnOpenOrCreate" Content="Перейти в дизайнер Fast Report" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="0.429,0.398" Click="btnOpenOrCreate_Click"/>
+    </Grid>
+</Window>
