@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastReportDLL">
+      <HintPath>..\FastReportService\bin\Release\FastReportDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReportService">
+      <HintPath>..\FastReportService\bin\Release\FastReportService.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -50,16 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FastReportDLL\FastReportDLL.csproj">
-      <Project>{1c02afd8-ea92-492a-81e1-61912878bba4}</Project>
-      <Name>FastReportDLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FastReportService\FastReportService.csproj">
-      <Project>{e264a54e-dac3-4d34-85cf-faf2e9b2a94b}</Project>
-      <Name>FastReportService</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

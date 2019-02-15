@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\ConsoleApplicationTest\bin\Debug\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -30,29 +30,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastReport, Version=2018.4.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\FastReport.dll</HintPath>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\libs\FastReport.dll</HintPath>
     </Reference>
     <Reference Include="FastReport.Bars, Version=2018.4.4.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\FastReport.Bars.dll</HintPath>
+      <HintPath>..\..\..\libs\FastReport.Bars.dll</HintPath>
     </Reference>
     <Reference Include="FastReport.Editor, Version=2018.4.4.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\FastReport.Editor.dll</HintPath>
+      <HintPath>..\..\..\libs\FastReport.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="FastReport.Service, Version=2018.4.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\FastReport.Service.dll</HintPath>
+    <Reference Include="FastReport.Service">
+      <HintPath>..\..\..\libs\FastReport.Service.dll</HintPath>
     </Reference>
     <Reference Include="FastReport.VSDesign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\FastReport.VSDesign.dll</HintPath>
+      <HintPath>..\..\..\libs\FastReport.VSDesign.dll</HintPath>
     </Reference>
     <Reference Include="FastReport.Web, Version=2018.4.4.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\FastReport.Web.dll</HintPath>
+      <HintPath>..\..\..\libs\FastReport.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

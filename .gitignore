@@ -1,0 +1,16 @@
+*.obj
+*.log
+Debug/
+Release/
+*.lib
+*.sbr
+obj/
+.vs/
+FastReport.Bars.dll
+FastReport.dll
+FastReport.Editor.dll
+FastReport.Service.dll
+FastReport.VSDesign.dll
+FastReport.Web.dll
+#Nuget packages folder
+packages/

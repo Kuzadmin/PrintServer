@@ -31,10 +31,8 @@ namespace FastReportDLL
         WriterLog(String _path, int _time_out)
         {
             is_start = false;
-            if(_path != null)
-            {
+            DirExist(_path);
 
-            }
             String date = DateTime.Now.ToString("yyyy-MM-dd");
             path = _path + "\\" + date+".log";
             //path = _path;
@@ -50,12 +48,22 @@ namespace FastReportDLL
         {
             if (file != null)
             {
-                byte[] text = Encoding.UTF8.GetBytes("Файл закрыт\r\n");
-                file.Write(text, 0, text.Length);
+                //byte[] text = Encoding.UTF8.GetBytes("Файл закрыт\r\n");
+                //file.Write(text, 0, text.Length);
                 file.Close();
             }
             file = null;
         }
+
+        public void DirExist(string path_dir)
+        {
+            DirectoryInfo dirInfo = new DirectoryInfo(path_dir);
+            if (!dirInfo.Exists)
+            {
+                dirInfo.Create();
+            }
+        }
+
 
         public void Create()
         {
@@ -93,8 +101,8 @@ namespace FastReportDLL
         public void Open()
         {
             file = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.Write);
-            byte[] text = Encoding.UTF8.GetBytes("Файл открыт\r\n");
-            file.Write(text, 0, text.Length);
+            //byte[] text = Encoding.UTF8.GetBytes("Файл открыт\r\n");
+            //file.Write(text, 0, text.Length);
         }
 
         public void Write(MessageLog mes_log)
